@@ -14,6 +14,13 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
+# Compilers setup for Q
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_CLANG_VERSION := r353983c
 
-include $(call all-subdir-makefiles)
+# Kernel inline building
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/sony/msm-4.14/kernel
+TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
+TARGET_NEEDS_DTBOIMAGE := false
+BOARD_KERNEL_SEPARATED_DTBO := false

@@ -24,3 +24,6 @@ TARGET_KERNEL_SOURCE := kernel/sony/msm-4.14/kernel
 TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
 TARGET_NEEDS_DTBOIMAGE := false
 BOARD_KERNEL_SEPARATED_DTBO := false
+
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+        DTC_EXT=/usr/bin/dtc

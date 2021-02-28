@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+CUST_PATH := device/sony/customization
+
+DEVICE_PACKAGE_OVERLAYS += $(CUST_PATH)/overlay
+
 # Compilers setup for Q
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_CLANG_VERSION := r353983c
